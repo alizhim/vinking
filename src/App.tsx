@@ -4,9 +4,12 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <Button disabled>hello</Button>
-        <Button btnType={ButtonType.Primary} size={ButtonSize.Large}>hello</Button>
+        <Button>hello</Button>
+        <Button disabled>disabled button</Button>
+        <Button btnType={ButtonType.Primary} size={ButtonSize.Large}>Primary</Button>
+        <Button btnType={ButtonType.Danger} size={ButtonSize.Small}>Danger</Button>
         <Button btnType={ButtonType.Link} href="www.baidu.com">Baidu</Button>
+        <Button btnType={ButtonType.Link} href="www.baidu.com" disabled>Baidu</Button>
         <p>
           Edit <code>src/App.tsx</code> and save to reload.
         </p>
